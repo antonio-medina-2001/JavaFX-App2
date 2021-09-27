@@ -5,6 +5,7 @@
  */
 package javafx.app2;
 
+import javafx.application.Application;
 import javafx.geometry.Insets;
 import static javafx.application.Application.launch;
 import javafx.event.ActionEvent;
@@ -24,8 +25,8 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 
-public class JavaFXApp2 implements EventHandler {
-   @Override
+public class JavaFXApp2 extends Application {
+    @Override
     public void start(Stage primaryStage) {
         // Texto de la parte superior de la ventana
         primaryStage.setTitle("JavaFX Welcome");
